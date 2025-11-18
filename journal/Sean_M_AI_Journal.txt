@@ -31,4 +31,17 @@ Week 10, Entry #9
 This week, I completed the exercises mainly by manually writing out class structures, method headers, and docstrings, since like last week, problems frequently referenced prior exercises and required lots of incremental edititng. Still as per usual I did use Perplexity AI at a few strategic points: most notably when I needed to confirm how Python's abstractmethod decorators actually enforce requirements in terms of how something can be instantiated. For example, on the 1st exercise asking to prove that the abstract class can't be instantiated, I didn't initially quite get why a TypeError should be the expected outcome, so I prompted Perplexity AI with "does instantiating a class with an abstract method always raise TypeError," which briefly explained what I needed to know before I quickly implemented the solution ; this was moreso for my own understanding than it was me being stuck. Beyond this, I mainly used Perplexity AI for the occasional reminder of how some built-in functions that were foreign to me work (ex: how to use issubclass for checking virtual subclass registration, since issubclass is a function I had never seen). One other particular usage I can recall in the final stages of the exercises was in the adapter exercise, which had me unsure how to correctly use .register() since it was another code structure that was foreign to me, so I asked Perplexity for a minimal example of register() in practice, which helped me quickly piece together the solution that adapts third-party book objects to the system structure. 
 
 Week 11, Entry #10
-In Progress...
+This week, I completed the exercises with a typical usage of AI assistance, not in particularly new ways but in usual ways as expected such as reminding me 
+of built-in or external library syntax, and double checking that my solutions were not super inefficient. One instance I can recall off the top of my head was
+when I needed to double-check that I was understanding how to work with the dataclass.replace() feature correctly, since I dont recall using it in any past 
+exercises. Specifcally I needed to check that in exercise 12 that I knew how replace is implemented syntatically, so I prompted Perplexity AI to generate a
+random code example demonstrating how replace() works in a class denoted by an @dataclass decorator, which I looked at for a decent amount of time before I
+finally recognized the pattern and implemented the solution. Another instance I recall was in exercise 18 when I needed to implement the aligned table 
+generator, which at first left me completely stuck since I simply didnt know where to start, so in search for a hint I asked Perplexity AI (given the prompt
+of the exercise), "are there any functions that could make this solution simple?" to which it generated a reponse telling me that the map() and zip() functions
+could be useful. With that in mind, I didnt ask for any further context and tried to think of a way those functions could solve my problem, and after thinking
+it out for a couple minutes I thought of a solution and implemented it on my own, only using AI for the hint of which functions to include. Overall, I felt
+like I managed to implement most of the solutions in these exercises mostly independently, with Perplexity being most useful for the specific task of reminding
+me what functions exist and how they can be of use to a problem, which is overall a more efficient approach to programming I feel than spending large blocks
+of time trying to remember every function and syntax there is, which isnt very realisitc anyway I dont think. This is why I am grateful to have a learning
+experience that incorporates the assistance of AI.
